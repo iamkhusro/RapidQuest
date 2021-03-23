@@ -22,7 +22,7 @@ body
 }
 #content1
 {
-    background-color: #ebebeb;
+    background-color: #eeeeee;
     grid-area: content1;
 }
 #content2
@@ -37,7 +37,7 @@ body
 }
 #content4
 {
-    background-color: #ebebeb;
+    background-color: #eeeeee;
     grid-area: content4;
 }
 
@@ -102,7 +102,7 @@ p
 }
 
 
-@media (max-width: 500px)
+@media (max-width: 600px)
 {
     .container
     {
