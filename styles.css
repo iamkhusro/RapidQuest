@@ -1,0 +1,128 @@
+body
+{
+    margin: 0;
+}
+
+.container
+{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: .10fr .65fr 1.3fr .7fr;
+    grid-template-rows: 1.3fr .8fr;
+    grid-template-areas:
+        "sidebar content1 content2 content4"
+        "sidebar content1 content3 content4";
+
+}
+
+#sidebar
+{
+    background-color: whitesmoke;
+    grid-area: sidebar;
+}
+#content1
+{
+    background-color: #ebebeb;
+    grid-area: content1;
+}
+#content2
+{
+    background-color: whitesmoke;
+    grid-area: content2;
+}
+#content3
+{
+    background-color: whitesmoke;
+    grid-area: content3;
+}
+#content4
+{
+    background-color: #ebebeb;
+    grid-area: content4;
+}
+
+#top
+{
+    position: relative;
+    top: 1rem;
+}
+#middle
+{
+    position: relative;
+    top: 5rem;
+}
+#bottom {
+    position: relative;
+    top: 8rem;
+}
+.buttons
+{
+    color: #a6a6a4;
+    font-size: 1.2rem;
+    padding: .7rem;
+    margin: .2rem 0;
+}
+
+.buttons:hover
+{
+    color: blue;
+}
+#pic
+{
+    width: 6.5rem;
+    padding: 1rem;
+    margin: 0 1.5rem;
+    float: left;
+
+}
+#name
+{
+    padding: 2.5rem 2.5rem 0 2.5rem ;
+    margin: 2rem 0 0 0;
+}
+#greet
+{
+    margin: 0;
+    padding: 0 0 0 2.5rem;
+}
+h2, h3, h4
+{
+    margin: 0;
+}
+p
+{
+    margin: 0;
+}
+#account
+{
+    clear: left;
+    height: 30rem;
+    width: 20rem;
+    padding: 0 0 0 4rem;
+}
+
+
+@media (max-width: 500px)
+{
+    .container
+    {
+        height: 300vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr .5fr .5fr;
+        grid-template-areas:
+            "content1"
+            "content2"
+            "content3"
+            "content4"
+    }
+    #sidebar
+    {
+        position: fixed;
+        bottom: 3px;
+        width: 100%;
+        height: 3.5rem;
+    }
+
+
+}
+
