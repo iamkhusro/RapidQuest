@@ -7,7 +7,7 @@ body
 {
     display: grid;
     height: 100vh;
-    grid-template-columns: .10fr .65fr 1.3fr .7fr;
+    grid-template-columns: .10fr .6fr 1.3fr .6fr;
     grid-template-rows: 1.3fr .8fr;
     grid-template-areas:
         "sidebar content1 content2 content4"
@@ -51,7 +51,8 @@ body
     position: relative;
     top: 5rem;
 }
-#bottom {
+#bottom
+{
     position: relative;
     top: 8rem;
 }
@@ -65,7 +66,7 @@ body
 
 .buttons:hover
 {
-    color: blue;
+    color: #0779e4;
 }
 #pic
 {
@@ -77,6 +78,7 @@ body
 }
 #name
 {
+    font-family: 'Della Respira', serif;
     padding: 2.5rem 2.5rem 0 2.5rem ;
     margin: 2rem 0 0 0;
 }
@@ -88,18 +90,70 @@ body
 h2, h3, h4
 {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 p
 {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: small;
 }
 #account
 {
     clear: left;
     height: 30rem;
-    width: 20rem;
-    padding: 0 0 0 4rem;
+    width: 17rem;
+    padding: 0 0 0 3.5rem;
 }
+#compare
+{
+    position: relative;
+    left: 4rem
+}
+.pie
+{
+    position: relative;
+    left: 15rem;
+
+}
+#box
+{
+    float: left;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 59px;
+    border: 0px solid #f0f0f0;
+    border-radius: 13px;
+    background: #0e7ff0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e7ff0), to(#0e80eb));
+    background: -moz-linear-gradient(top, #0e7ff0, #0e80eb);
+    background: linear-gradient(to bottom, #0e7ff0, #0e80eb);
+    font: normal normal bold 16px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+    background: #1198ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1198ff), to(#119aff));
+    background: -moz-linear-gradient(top, #1198ff, #119aff);
+    background: linear-gradient(to bottom, #1198ff, #119aff);
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:active {
+    background: #084c90;
+    background: -webkit-gradient(linear, left top, left bottom, from(#084c90), to(#0e80eb));
+    background: -moz-linear-gradient(top, #084c90, #0e80eb);
+    background: linear-gradient(to bottom, #084c90, #0e80eb);
+}
+
 
 
 @media (max-width: 600px)
