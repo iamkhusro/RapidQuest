@@ -139,6 +139,10 @@ p
     left: 5rem;
     z-index: 1;
 }
+#columnchart2
+{
+    display: none;
+}
 
 #combine
 {
@@ -302,11 +306,29 @@ select
     }
     #details
     {
-        left: 2rem;
+        left: 1.5rem;
     }
     #histogram
     {
-        left: 2rem;
+        left: 1.5rem;
+    }
+    #columnchart
+    {
+        display: none;
+    }
+    #columnchart2
+    {
+        display: flex;
+    }
+    #combine
+    {
+        left: 1.5rem;
+        top: .5rem;
+    }
+    #pie
+    {
+        left: 0;
+        top: 14rem;
     }
 
     #sidebar

@@ -2,9 +2,31 @@
 google.charts.load('current', {'packages':['corechart']});
 google.charts.load('current', {'packages':['bar']});
 google.charts.setOnLoadCallback(drawColumnChart);
+google.charts.setOnLoadCallback(drawColumnChart2);
 google.charts.setOnLoadCallback(drawPieChart);
 
 function drawColumnChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Year', 'Total Interest', 'Employee', 'Employer'],
+        ['2053', 700, 300, 100],
+        ['2054', 1170, 460, 200],
+        ['2055', 1330, 520, 300],
+        ['2056', 1455, 540, 350]
+    ]);
+
+    var options = {
+        chart: {
+            title: '',
+            subtitle: 'Total Interest, Employee, and Employer:',
+        }
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('columnchart2'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+}
+
+function drawColumnChart2() {
     var data = google.visualization.arrayToDataTable([
         ['Year', 'Total Interest', 'Employee', 'Employer'],
         ['2053', 700, 300, 100],
@@ -24,6 +46,7 @@ function drawColumnChart() {
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+
 
 
 function drawPieChart() {
