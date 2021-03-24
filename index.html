@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/00ccf00fe5.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script type="text/javascript" src="script.js"></script>
     <link rel="icon" href="images/logo.png">
@@ -96,27 +95,66 @@
 
         </div>
         <div id="content2">
-
-        <!--</div>
-        <div id="content3">
-            <div id="compare">
-                <h3>How do I compare to my peers?</h3>
-                <p>These numbers represent current goal achievement</p>
-                <br><br>
-                <p>&nbsp;&nbsp;&nbsp;Age: Under 30<br>&nbsp;&nbsp;&nbsp;Salary: k 20 - K 30<br>&nbsp;&nbsp;&nbsp;Gender: Male</p>
+            <div id="details">
+                <p style="color: blue">Retirement Income</p>
+                <h3>Starting Year 2056</h3>
+                <p style="font-size: medium">My Goal: $300,000&nbsp;&nbsp;&nbsp;Goal Achieved: 59%</p>
+                <br><br><br>
             </div>
-            <div class="pie">
-                <div id="box">
-                    <div class="chart" data-percent="78" data-scale-color="#ffb400">78%</div>
-                </div>
-                <div id="box">
-                    <div class="chart" data-percent="95" data-scale-color="#ffb400">95%</div>
-                </div>
-                <div id="box">
-                    <div class="chart" data-percent="59" data-scale-color="#ffb400">59%</div>
-                </div>
-            </div>-->
+            <div id="histogram">
+                <p style="font-size: medium">Contributions Overtime</p>
+                <div id="columnchart" style="width: 700px; height: 400px;"></div>
+            </div>
         </div>
+
+        <div id="content3">
+            <div id="combine">
+                <br>
+                <h4>How do I compare to my peers?</h4>
+                <p>These numbers represent current goal achievement</p>
+                <br>
+                <div id="selector">
+                    <table id="selects">
+                        <tr>
+                            <td><p>Age:</p></td>
+                            <td>
+                                <select name="age">
+                                    <option>Under 30</option>
+                                    <option>Above 30</option>
+                                </select>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><p>Salary:</p></td>
+                            <td>
+                                <select name="salary">
+                                    <option>K 20 - K 30</option>
+                                    <option>Above K 30</option>
+                                </select>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><p>Gender:</p></td>
+                            <td>
+                                <select name="gender">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="pie">
+                <div id="piechart" style="width: 500px; height: 340px;"></div>
+            </div>
+
+        </div>
+
         <div id="content4">
             <br><br>
             <div id="strategy">

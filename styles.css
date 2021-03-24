@@ -23,11 +23,13 @@ body
 {
     background-color: whitesmoke;
     grid-area: sidebar;
+    z-index: 5;
 }
 
 #sidebar2
 {
     display: none;
+    z-index: 5;
 }
 
 #content1
@@ -37,14 +39,15 @@ body
 }
 #content2
 {
-    background-color: whitesmoke;
+    background-color: white;
     grid-area: content2;
 }
 #content3
 {
-    background-color: whitesmoke;
+    background-color: white;
     grid-area: content3;
 }
+
 #content4
 {
     background-color: #eeeeee;
@@ -64,7 +67,7 @@ body
 #bottom
 {
     position: relative;
-    top: 8rem;
+    top: 30rem;
 }
 .buttons
 {
@@ -118,21 +121,66 @@ p
     padding: 0 0 0 4rem;
     font-size: small;
 }
-#compare
-{
-    position: relative;
-    left: 4rem
-}
-.pie
-{
-    position: relative;
-    left: 15rem;
 
-}
-#box
+#details
 {
+    position: relative;
+    width: 80%;
+    height: 20%;
+    left: 4rem;
+    top: 2rem;
+}
+#histogram
+{
+    position: relative;
+    width: 50%;
+    height: 30%;
+    background-color: white;
+    left: 5rem;
+    z-index: 1;
+}
+
+#combine
+{
+    position: relative;
+    width: 70%;
+    height: 45%;
+    background-color: white;
+    left: 4rem;
     float: left;
 }
+
+#pie
+{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    left: 40%;
+}
+#piechart
+{
+    position: relative;
+}
+
+select
+{
+    border: 0;
+    background-color: white;
+}
+
+
+#selects td
+{
+    border-bottom: 1px solid grey;
+}
+#selector
+{
+    position: relative;
+    width: 10rem;
+    background-color: white;
+    left: 5rem;
+}
+
 #strategy
 {
     height: 15rem;
@@ -183,7 +231,30 @@ p
 
 
 
+@media (max-width: 1670px) {
+    #sidebar
+    {
+        overflow: auto;
+    }
+    #content1
+    {
+        overflow: auto;
+    }
+    #content2
+    {
+        overflow: auto;
+    }
+    #content3
+    {
+        overflow: auto;
+    }
+    #content4
+    {
+        overflow: auto;
+    }
 
+
+}
 @media (max-width: 600px)
 {
     .container

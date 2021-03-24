@@ -1,9 +1,44 @@
 
-$(function() {
-    $('.chart').easyPieChart({
-        //your options goes here
-    });
-});
+google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawColumnChart);
+google.charts.setOnLoadCallback(drawPieChart);
+
+function drawColumnChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Year', 'Total Interest', 'Employee', 'Employer'],
+        ['2053', 700, 300, 100],
+        ['2054', 1170, 460, 200],
+        ['2055', 1330, 520, 300],
+        ['2056', 1455, 540, 350]
+    ]);
+
+    var options = {
+        chart: {
+            title: '',
+            subtitle: 'Total Interest, Employee, and Employer:',
+        }
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('columnchart'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+}
 
 
-document.getElementById("value").innerHTML = input.value;
+function drawPieChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['A', 'S'],
+        ['Average',     78],
+        ['Top',      95],
+        ['Me',  59]
+    ]);
+
+    var options = {
+        title: '',
+        pieHole: 0.4,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+}
