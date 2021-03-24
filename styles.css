@@ -81,6 +81,10 @@ body
 {
     color: #0779e4;
 }
+.fa-home
+{
+    color: #0779e4;
+}
 #pic
 {
     width: 6.5rem;
@@ -346,6 +350,10 @@ select
 
 
     }
+    .fa-home
+    {
+        color: #0779e4;
+    }
     #sidebar2 table
     {
         width: 100%;
@@ -353,4 +361,3 @@ select
 
 
 }
-
