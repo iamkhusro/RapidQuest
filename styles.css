@@ -67,7 +67,7 @@ body
 #bottom
 {
     position: relative;
-    top: 30rem;
+    top: 18rem;
 }
 .buttons
 {
@@ -131,16 +131,16 @@ p
     position: relative;
     width: 80%;
     height: 20%;
-    left: 4rem;
+    left: 2rem;
     top: 2rem;
 }
 #histogram
 {
     position: relative;
     width: 50%;
-    height: 30%;
+    height: 35%;
     background-color: white;
-    left: 5rem;
+    left: 2rem;
     z-index: 1;
 }
 #columnchart2
@@ -154,7 +154,7 @@ p
     width: 70%;
     height: 45%;
     background-color: white;
-    left: 4rem;
+    left: 2rem;
     float: left;
 }
 
@@ -163,7 +163,7 @@ p
     position: relative;
     width: 50%;
     height: 50%;
-    left: 40%;
+    left: 50%;
 }
 #piechart
 {
@@ -193,7 +193,7 @@ select
 {
     height: 15rem;
     width: 17rem;
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 3rem;
 }
 .slidecontainer
 {
@@ -326,13 +326,18 @@ select
     }
     #combine
     {
-        left: 1.5rem;
+        left: 1.7rem;
         top: .5rem;
     }
     #pie
     {
-        left: 0;
-        top: 14rem;
+        left: 1rem;
+        top: 15rem;
+    }
+
+    #strategy
+    {
+        align-items: center;
     }
 
     #sidebar

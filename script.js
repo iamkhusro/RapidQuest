@@ -58,7 +58,7 @@ function drawPieChart() {
 
     var options = {
         title: '',
-        pieHole: 0.4,
+        pieHole: 0.3,
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
