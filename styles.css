@@ -300,6 +300,15 @@ select
             "content3"
             "content4"
     }
+    #details
+    {
+        left: 2rem;
+    }
+    #histogram
+    {
+        left: 2rem;
+    }
+
     #sidebar
     {
         display: none;
